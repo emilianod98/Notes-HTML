@@ -1,11 +1,107 @@
+<!--Atributos-->
 <!DOCTYPE html>
+<!--lang: Se utiliza para especificar el idioma principal de la página-->
 <html lang="en">
 <head>
+    <!--charset: Se utiliza para especificar la codificación de caracteres utilizada en la página-->
     <meta charset="UTF-8">
+    <!--name, content: Se utiliza para controlar la escala y el tamaño de la ventana de visualización en dispositivos móviles y la respuesta de diseño de tu página web.-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Atributos & Enlaces</title>
 </head>
 <body>
+    <!--id: Se utiliza para proporcionar una identificación única a un elemento en la página. Esto es útil para aplicar estilos CSS específicos o para acceder al elemento con JavaScript.-->
+    <div id="miDiv">Este es un div con un ID</div>
+    <a id="miDiv">miDiv</a>
+    <br>
+    <hr>
+
+    <!--class: Se utiliza para asignar una o más clases CSS a un elemento. Esto permite aplicar estilos específicos a varios elementos.-->
+    <p class="parrafo-importante">Este es un párrafo con una clase</p>
+    <br>
+    <hr>
+
+    <!--src: Se utiliza en elementos como <img>, <script> y <iframe> para especificar la ubicación de un recurso externo, como una imagen, un archivo de script o una página web.-->
+    <img src="./src/Neko.gif" alt="Gató jugando">
+    <br>
+    <hr>
+
+    <!--href: Se usa en elementos como <a> para especificar la URL de destino de un enlace.-->
+    <a href="https://www.ejemplo.com">Enlace a ejemplo.com</a>
+    <br>
+    <hr>
+
+    <!--alt: Se utiliza en elementos <img> para proporcionar un texto alternativo que se muestra si la imagen no se puede cargar.-->  
+    <img src="./src/Neko.gif" alt="Gató jugando">
+    <br>
+    <hr>
+
+    <!--style: Se usa para aplicar estilos CSS directamente a un elemento HTML.-->  
+    <p style="color: red; font-size: 16px;">Este párrafo tiene estilos en línea</p>
+    <br>
+    <hr>
+
+    <!--disabled: Se utiliza en elementos como <input> y <button> para desactivar la interacción del usuario con el elemento.-->    
+    <input type="text" disabled>
+    <br>
+    <hr>
+
+    <!--placeholder: Se usa en elementos <input> y <textarea> para proporcionar un texto de ejemplo que desaparece cuando el usuario comienza a escribir.--> 
+    <input type="text" placeholder="Escribe tu nombre">
+    <br>
+    <hr>
+
+    <!--data-*:  Puedes crear atributos personalizados que comiencen con "data-" para almacenar información personalizada en elementos HTML. Estos son útiles para JavaScript y CSS personalizado.--> 
+    <div data-valor="123">Este div tiene un atributo de datos personalizado</div>
+    <br>
+    <hr>
+
+    <!--Estos son algunos de los atributos de HTML.-->  
+
+    
+
+    <!--Enlaces-->
+
+    <!--Enlace a otra página web:-->
+    <a href="https://www.ejemplo.com">Visitar Ejemplo.com</a>
+    <br>
+    <hr>
+
+    <!--Enlace a una dirección de correo electrónico:-->
+    <a href="mailto:correo@ejemplo.com">Enviar correo a Ejemplo</a>
+    <br>
+    <hr>
+
+    <!--Enlace a un archivo descargable (por ejemplo, un PDF):-->
+    <a href="ruta/a/archivo.pdf" download>Descargar PDF</a>
+    <br>
+    <hr>
+
+    <!--Enlace interno a otra página en el mismo sitio:-->
+    <a href="./01,02,03-EstructuraBasica.html">Ir a la Página 2</a>
+    <br>
+    <hr>
+
+    <!--Enlace a una ubicación dentro de la misma página (anclaje):-->
+    <a href="#miDiv">miDiv</a>
+    <br>
+    <hr>
+
+    <!--Enlace que se abre en una nueva ventana o pestaña:-->
+    <a href="https://www.ejemplo.com" target="_blank">Abrir en nueva ventana</a>
+    <br>
+    <hr>
+
+    <!--Enlace con texto o imagen como contenido:-->
+    <a href="https://www.ejemplo.com">Este es un enlace de texto</a>
+    <a href="https://www.ejemplo.com"><img src="./src/Neko.gif" alt="Gató jugando"></a>
+    <br>
+    <hr>
+
+    <!--Enlace con estilo CSS:-->
+    <a href="https://www.ejemplo.com" style="color: blue; text-decoration: underline;">Enlace estilizado</a>
+    <br>
+    <hr>
     
 </body>
 </html>
