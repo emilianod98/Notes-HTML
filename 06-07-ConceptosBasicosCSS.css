@@ -1,0 +1,35 @@
+/* 
+HOJA CSS (Cascading Style Sheets) 
+
+Se va lleyendo en forma de cascada, de arriba para abajo reescribiendo los ultimos valores para cada elemento en caso de aplicarles varios estilos*/
+
+
+/* SELECTORES */
+h2 { /* Selector de etiqueta */
+    color: blue;
+}
+
+h2.Selectorporclase { /* Selector de clase */
+    color: red;
+}
+
+#SelectorporID { /* Selector de ID */
+    color: green;
+}
+
+
+/* PROPIEDAD*/
+p {
+    color: blue; /* Propiedad: color */
+    font-size: 100px; /* Propiedad: font-size */
+}
+
+
+/* VALOR*/
+p.valor {
+    color: gold; /* Valor: gold */ 
+    font-size: 200px; /* Valor: 20px */
+}
+
+
+/*Estos son solo algunos ejemplos básicos para comenzar a practicar CSS. Puedes combinar selectores, propiedades y valores de muchas formas para crear diseños y estilos personalizados en tu sitio web. ¡Diviértete experimentando!*/
