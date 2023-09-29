@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .contenedor-de-cuadricula {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* Dos columnas, la primera de 200px y la segunda que ocupa el espacio restante */
+    grid-template-rows: 100px 1fr 100px; /* Tres filas, la primera y la tercera de 100px y la segunda que ocupa el espacio restante */
+    grid-gap: 10px; /* Espaciado entre las celdas de la cuadrícula */
+    height: 100vh; /* Establece la altura del contenedor de cuadrícula para ocupar el 100% de la altura del viewport */
+  }
+  
+  .cabecera, .menu, .principal, .pie-de-pagina {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  .cabecera {
+    grid-column: span 2; /* Hace que este elemento ocupe dos columnas */
+  }
+  
+  .menu {
+    grid-row: span 2; /* Hace que este elemento ocupe dos filas */
+  }
+  

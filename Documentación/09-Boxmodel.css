@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.caja {
+    width: 200px;
+    height: 100px;
+    background-color: #3498db;
+    color: darkblue;
+    text-align: center;
+    padding: 20px;
+    /* Añadir padding al contenido dentro de la caja */
+    border: 2px solid #2980b9;
+    /* Añadir un borde a la caja */
+    margin: 20px;
+    /* Añadir margen alrededor de la caja */
+}
