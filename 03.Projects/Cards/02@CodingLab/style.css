@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #010203;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background: #101010;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 2px 5px 30px rgba(255, 255, 255, 0.05);
+    position: relative;
+}
+
+.profile-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36%;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    background:linear-gradient(75deg, #267a23, #083306);
+
+}
+
+.image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #267a23;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.image .profile-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #111;
+}
+
+.profile-card .text-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-card .name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.text-card .job {
+    font-weight: 400;
+    color: #fff;
+}
+
+.profile-card .buttons-card {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.buttons-card .link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 22px;
+    height: 34px;
+    width: 34px;
+    margin: 0 12px;
+    border-radius: 50%;
+    background: #222;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.buttons-card .one:hover  {
+    background: #4267b2;
+}
+
+.buttons-card .two:hover {
+    background: #f4f4f4;
+}
+
+.buttons-card .three:hover {
+    background: #e1306c;
+}
+
+.buttons-card .four:hover {
+    background: #ff0000;
+}
+
+.profile-card .subscribe-message {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.subscribe-message .button {
+    margin: 0 10px;
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #f4f4f4;
+    background: #010203;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.subscribe-message .button:hover{
+    background: #333;
+}
+
+.profile-card .statistics {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.statistics .data {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 0 25px;
+    border-right: 2px solid #333;
+}
+
+.data i {
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+.data:last-child {
+    border-right: none;
+}
