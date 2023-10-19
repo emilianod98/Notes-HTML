@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <style>
+        a:link {
+          color: green;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        
+        a:visited {
+          color: pink;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        
+        a:hover {
+          color: red;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        
+        a:active {
+          color: yellow;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+    </style>
+
+    <style>
+        a:link, a:visited {
+        background-color: #f44336;
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        }
+        
+        a:hover, a:active {
+        background-color: red;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <!--Links-->
+
+    <h2 id="C4" style="background-color: aquamarine;">Marcador</h2>
+    <hr>
+
+    <a href="#">link text</a>
+    <hr>
+
+    <a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+    <hr>
+
+    <!--Links Attribute Target -->
+    <h1>Abre el documento en una nueva ventana o pestaña.</h1>
+    <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+    <hr>
+    <h1>Abre el documento en la misma ventana/pestaña en la que se hizo clic.</h1>
+    <a href="https://www.w3schools.com/" target="_self">Visit W3Schools!</a>
+    <hr>
+    <h1> Abre el documento en el marco principal.</h1>
+    <a href="https://www.w3schools.com/" target="_parent">Visit W3Schools!</a>
+    <hr>
+    <h1>Abre el documento en el cuerpo completo de la ventana.</h1>
+    <a href="https://www.w3schools.com/" target="_top">Visit W3Schools!</a>
+    <hr>
+
+    <h2>Absolute URLs</h2>
+    <p><a href="https://www.w3.org/">W3C</a></p>
+    <p><a href="https://www.google.com/">Google</a></p>
+    <hr>
+
+    <h2>Relative URLs</h2>
+    <p><a href="./assets/W3Schools.png">W3Schools Logo</a></p>
+    <p><a href="/01.HTML&CSS/04@W3Schools/01Home.html">01NotesHome</a></p>
+    <hr>
+
+    <!--Links de imagenes -->
+    <a href="./assets/W3Schools.png">
+        <img src="./assets/W3Schools.png" alt="W3Schools Logo" style="width:42px;height:42px;">
+    </a>
+    <hr>
+
+    <!--Links de correos -->
+    <a href="mailto:someone@example.com">Send email</a>
+    <hr>
+
+    <!--Links con títulos -->
+    <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+    <hr>
+
+    <!--Links con títulos -->
+    <a href="#C4">Salto a Marcador</a>
+
+</body>
+</html>

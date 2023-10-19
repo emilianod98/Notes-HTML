@@ -1,0 +1,16 @@
+p {
+    border: 2px solid powderblue;
+    padding: 30px;
+}
+
+.lorem {
+    border: 2px solid violet;
+    padding: 30px;
+}
+
+#lorem {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+}
