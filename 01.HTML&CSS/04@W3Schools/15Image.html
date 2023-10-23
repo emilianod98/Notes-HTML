@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image</title>
+    <style>
+      .estilo {
+        width: 100%;
+      }
+    </style>
+    <!--Por ultimo tambien se puede usar imagenes de fondo-->
+    <style>
+        body {
+          background-image: url('https://i.ytimg.com/vi/lJ0zjDph3y8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAo7m9htyuYHRQrnVW-yjh6v1JdSg'); background-repeat: no-repeat; background-attachment: fixed; background-position: center;
+        }
+        </style>
+  </head>
+  <body>
+    <!--La Etiqueta "img" se utiliza para inscrustar una imagen en la página web.-->
+    <h1>Imagenes en HTML</h1>
+    <img src="./assets/W3Schools.png" alt="W3Schools.com" />
+    <hr />
+    <!--Esta etiqueta contiene dos atributos "src": Ruta del archivo(relativa o absoluta) y "alt": texto que descríbe la imagen en caso de no mostrarse por algún error.-->
+    <h1>Atributo "alt"</h1>
+    <img src="./assets/W3Schools.p" alt="W3Schools.com" />
+    <hr />
+    <!--Se le puede agregar otros atributos, como el ancho(width) y el alto(height)-->
+    <h1>Atributo "width" & "height"</h1>
+    <img
+      src="./assets/W3Schools.png"
+      alt="W3Schools.com"
+      width="104"
+      height="142"
+    />
+    <hr />
+    <!--También se le puede agregar una class para agregarles estilos en el head o en una hoja de css-->
+    <h1>Estilo aplicado en el head</h1>
+    <img src="./assets/W3Schools.png" alt="W3Schools.com" class="estilo" />
+    <hr />
+    <!--Se le puede agregar un enlace a la misma imagen-->
+    <h1>Imagen con Enlace</h1>
+    <a href="https://www.w3schools.com/html/html_images.asp">
+      <img src="./assets/W3Schools.png" alt="W3Schools.com" />
+    </a>
+    <hr />
+    <!--Imagenes Flotante-->
+    <h1>Imagen Flotantes</h1>
+    <p>
+      <img
+        src="./assets/W3Schools.png"
+        alt="W3Schools.com"
+        style="float: right; width: 42px; height: 42px"
+      />
+      The image will float to the right of the text.
+    </p>
+
+    <hr />
+
+    <p>
+      <img
+        src="./assets/W3Schools.png"
+        alt="W3Schools.com"
+        style="float: left; width: 42px; height: 42px"
+      />
+      The image will float to the left of the text.
+    </p>
+    <hr />
+
+    <!--
+        Formatos comunes de imagenes:
+        APNG: 	Animated Portable Network Graphics      (.apng)
+        GIF:    Graphics Interchange Format             (.gif)
+        ICO:    Microsoft Icon                          (.ico, .cur)
+        JPEG:   Joint Photographic Expert Group image   (.jpg, .jpeg, .jfif, .pjpeg, .pjp)
+        PNG:    Portable Network Graphics               (.png)
+        SVG:    Scalable Vector Graphics                (.svg)
+    -->
+
+    <!--HTML Image Maps-->
+    <h1>HTML Image Maps</h1>
+
+    <!--
+        La idea detrás de un mapa de imágenes es que debería poder realizar diferentes acciones dependiendo de en qué parte de la imagen haga clic.
+    -->
+
+    <!--usemap: Se utiliza para crear una relación entre la imagen y el mapa de imagen.-->
+    <img src="./assets/workplace.jpg" alt="Workplace" usemap="#workmap" />
+
+    <!--map: Se utiliza para crear un mapa de imagen y está vinculado a la imagen mediante el name(nombre creado anteriormente con el "usemap").-->
+    <map name="workmap">
+      <area
+        shape="rect"
+        coords="34,44,270,350"
+        alt="Computer"
+        href="./assets/computer.jpg"
+      />
+      <area
+        shape="rect"
+        coords="290,172,333,250"
+        alt="Phone"
+        href="./assets/phone.jpg"
+      />
+      <area
+        shape="circle"
+        coords="337,300,44"
+        alt="Coffee"
+        href="./assets/coffee.jpg"
+      />
+    </map>
+
+    <!--
+        Las areas pueden ser:
+        rect      - define una región rectangular
+        circle    - define una región circular
+        poly      - define una región poligonal
+        default   - define toda la región
+    -->
+
+    
+    
+  </body>
+</html>
