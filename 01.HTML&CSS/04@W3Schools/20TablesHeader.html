@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Header</title>
+    <style>
+      caption {
+        background-color: aqua;
+        color: blue;
+        font-size: x-large;
+        font-weight: bolder;
+      }
+
+      th {
+        background: #085f33;
+        text-align: left;
+      }
+
+      th,
+      td {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 40px;
+      }
+
+      table {
+        border-spacing: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Table Header</h1>
+    <hr />
+
+    <h2>Header Horizontal</h2>
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+    <hr />
+
+    <h2>Header Vertical</h2>
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <td>Jill</td>
+        <td>Eve</td>
+      </tr>
+      <tr>
+        <th>Lastname</th>
+        <td>Smith</td>
+        <td>Jackson</td>
+      </tr>
+      <tr>
+        <th>Age</th>
+        <td>94</td>
+        <td>50</td>
+      </tr>
+    </table>
+    <hr />
+
+    <h2>Header para múltiples columnas</h2>
+    <table>
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+    <hr />
+
+    <h2>Título de la Tabla</h2>
+    <table style="width: 100%">
+      <caption>
+        Título de la tabla: "Monthly savings"
+      </caption>
+      <tr>
+        <th>Month</th>
+        <th>Savings</th>
+      </tr>
+      <tr>
+        <td>January</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>February</td>
+        <td>$50</td>
+      </tr>
+    </table>
+  </body>
+</html>

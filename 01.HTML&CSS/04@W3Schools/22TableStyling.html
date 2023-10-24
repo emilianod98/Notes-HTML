@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Styling</title>
+    <style>
+      th,
+      td {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 40px;
+      }
+
+      .zebra:nth-child(even) {
+        background-color: #3d1364;
+        color: aliceblue;
+      }
+
+      .verticalzebrazebra:nth-child(even) {
+        background-color: #34c8d5;
+        color: aliceblue;
+      }
+
+      .ch:nth-child(even) {
+        background-color: rgba(116, 202, 145, 0.4);
+      }
+
+      .cv:nth-child(even) {
+        background-color: rgba(31, 90, 45, 0.4);
+      }
+
+      tr {
+        border-bottom: 1px solid #000000;
+      }
+
+      tr:hover {
+        background-color: red;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Tablas con estilos ._.</h1>
+    <hr />
+
+    <h2>Zebra Stripes</h2>
+    <table>
+      <tr class="zebra">
+        <th>One</th>
+        <th>Two</th>
+        <th>Three</th>
+        <th>Four</th>
+      </tr>
+      <tr class="zebra">
+        <td>0001</td>
+        <td>0002</td>
+        <td>0003</td>
+        <td>0004</td>
+      </tr>
+      <tr class="zebra">
+        <td>0001</td>
+        <td>0002</td>
+        <td>0003</td>
+        <td>0004</td>
+      </tr>
+      <tr class="zebra">
+        <td>0001</td>
+        <td>0002</td>
+        <td>0003</td>
+        <td>0004</td>
+      </tr>
+    </table>
+    <hr />
+
+    <h2>Vertical Zebra Stripes</h2>
+    <table>
+      <tr>
+        <th class="verticalzebrazebra">One</th>
+        <th class="verticalzebrazebra">Two</th>
+        <th class="verticalzebrazebra">Three</th>
+        <th class="verticalzebrazebra">Four</th>
+      </tr>
+      <tr>
+        <td class="verticalzebrazebra">0001</td>
+        <td class="verticalzebrazebra">0002</td>
+        <td class="verticalzebrazebra">0003</td>
+        <td class="verticalzebrazebra">0004</td>
+      </tr>
+      <tr>
+        <td class="verticalzebrazebra">0001</td>
+        <td class="verticalzebrazebra">0002</td>
+        <td class="verticalzebrazebra">0003</td>
+        <td class="verticalzebrazebra">0004</td>
+      </tr>
+      <tr>
+        <td class="verticalzebrazebra">0001</td>
+        <td class="verticalzebrazebra">0002</td>
+        <td class="verticalzebrazebra">0003</td>
+        <td class="verticalzebrazebra">0004</td>
+      </tr>
+      <hr />
+    </table>
+    <hr />
+
+    <h2>Combinado</h2>
+    <table>
+      <tr class="ch">
+        <th class="cv">One</th>
+        <th class="cv">Two</th>
+        <th class="cv">Three</th>
+        <th class="cv">Four</th>
+      </tr>
+      <tr class="ch">
+        <td class="cv">0001</td>
+        <td class="cv">0002</td>
+        <td class="cv">0003</td>
+        <td class="cv">0004</td>
+      </tr>
+      <tr class="ch">
+        <td class="cv">0001</td>
+        <td class="cv">0002</td>
+        <td class="cv">0003</td>
+        <td class="cv">0004</td>
+      </tr>
+      <tr class="ch">
+        <td class="cv">0001</td>
+        <td class="cv">0002</td>
+        <td class="cv">0003</td>
+        <td class="cv">0004</td>
+      </tr>
+    </table>
+    <hr />
+  </body>
+</html>

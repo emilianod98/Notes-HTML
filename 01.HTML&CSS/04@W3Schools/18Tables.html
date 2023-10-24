@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables HTML</title>
+    <style>
+      .estilo01 {
+        border: 1px solid black;
+      }
+
+      .estilo02 {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      .estilo03 {
+        border: 1px solid white;
+        border-collapse: collapse;
+        background-color: orange;
+      }
+
+      .estilo04 {
+        border: 1px solid;
+        border-radius: 10px;
+        border-color: red;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Tables HTML</h1>
+
+    <h2>Definir una tabla en HTML:</h2>
+
+    <!--Etiqueta que se utiliza para crear tablas en HTML-->
+    <table class="estilo01">
+      <!--Cada fila de la tabla comienza con la etiqueta "tr"-->
+      <tr class="estilo01">
+        <!--Los encabezados de cada Columnas se asignan con "th"-->
+        <th class="estilo01">Company</th>
+        <th class="estilo01">Contact</th>
+        <th class="estilo01">Country</th>
+      </tr>
+      <tr class="estilo01">
+        <!--Y para ir rellando las filas con datos se utiliza la etiqueta "td"-->
+        <td class="estilo01">Alfreds Futterkiste</td>
+        <td class="estilo01">Maria Anders</td>
+        <td class="estilo01">Germany</td>
+      </tr>
+      <tr class="estilo01">
+        <td class="estilo01">Centro comercial Moctezuma</td>
+        <td class="estilo01">Francisco Chang</td>
+        <td class="estilo01">Mexico</td>
+      </tr>
+    </table>
+    <hr />
+
+    <h2>Tabla de una sola fila</h2>
+    <table class="estilo02">
+      <tr class="estilo02">
+        <td class="estilo02">Emil</td>
+        <td class="estilo02">Tobias</td>
+        <td class="estilo02">Linus</td>
+      </tr>
+    </table>
+    <hr />
+
+    <h2>Tabla de dos filas</h2>
+    <table class="estilo03">
+      <tr class="estilo03">
+        <td class="estilo03">Emil</td>
+        <td class="estilo03">Tobias</td>
+        <td class="estilo03">Linus</td>
+      </tr>
+      <tr>
+        <td class="estilo03">16</td>
+        <td class="estilo03">14</td>
+        <td class="estilo03">10</td>
+      </tr>
+    </table>
+    <hr />
+
+    <h2>Tabla con encabezado</h2>
+    <table class="estilo04">
+      <tr class="estilo04">
+        <th class="estilo04">Person 1</th>
+        <th class="estilo04">Person 2</th>
+        <th class="estilo04">Person 3</th>
+      </tr>
+      <tr class="estilo04">
+        <td class="estilo04">Emil</td>
+        <td class="estilo04">Tobias</td>
+        <td class="estilo04">Linus</td>
+      </tr>
+      <tr class="estilo04">
+        <td class="estilo04">16</td>
+        <td class="estilo04">14</td>
+        <td class="estilo04">10</td>
+      </tr>
+    </table>
+    <hr />
+
+    <!--
+      Etiquetas de las Tablas:
+      <table>	    Define una tabla
+      <th>	      Define el encabezado de la columna
+      <tr>	      Define las filas de la tabla
+      <td>	      Define el contenido dentro de la tabla
+      <caption>	  Define un título de tabla
+      <colgroup>	Especifica un grupo de una o más columnas en una tabla para formatear
+      <col>	      Especifica propiedades de columna para cada columna dentro de un elemento <colgroup>
+      <thead>	    Agrupa el contenido del encabezado en una tabla.
+      <tbody>	    Agrupa el contenido del cuerpo en una tabla.
+      <tfoot>	    Agrupa el contenido del pie de página en una tabla.
+    -->
+
+    <!--
+      Dotted Table Borders (border-style:"..."):
+      dotted     
+      dashed     
+      solid     
+      double     
+      groove     
+      ridge     
+      inset     
+      outset     
+      none     
+      hidden   
+    -->  
+
+  </body>
+</html>
